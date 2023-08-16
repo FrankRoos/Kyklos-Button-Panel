@@ -76,11 +76,7 @@ export const plugin = new PanelPlugin<ButtonPanelOptions>(ButtonPanel).setPanelO
       defaultValue: 'application/json',
       settings: {
         allowCustomValue: true,
-        options: [
-          { label: 'application/json', value: 'application/json' },
-          { label: 'text/html', value: 'text/html' },
-          { label: 'text/plain', value: 'text/plain' },
-        ],
+        options: [{ label: 'application/json', value: 'application/json' }],
       },
       showIf: (config) => config.method === 'POST',
     })
@@ -90,16 +86,14 @@ export const plugin = new PanelPlugin<ButtonPanelOptions>(ButtonPanel).setPanelO
       name: 'Payload',
       category: ['REST Integration'],
       description: 'Optional payload to send with the request',
+      defaultValue: '{"KyklosTask": false}',
       settings: {
         language: (contentType: string) => {
           switch (contentType) {
             case 'application/json':
               return 'json';
-            case 'text/html':
-              return 'html';
-            case 'text/plain':
             default:
-              return 'text';
+              return '';
           }
         },
       },
