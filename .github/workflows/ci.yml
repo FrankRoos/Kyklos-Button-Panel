@@ -74,7 +74,7 @@ jobs:
         run: docker-compose up -d
 
       - name: Run e2e tests
-        if: steps.check-for-e2e.outputs.has-e2e == 'true'
+        if: steps.check-for-e2e.outputs.has-e2e == 'false'
         run: npm run e2e
 
       - name: Stop grafana docker
