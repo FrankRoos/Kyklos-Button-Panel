@@ -22,11 +22,11 @@ It provides a simple Grafana 9.x panel that shows only one button - to integrate
 
 ## Usage
 
-![Screencast](img/screencast.gif)
+![Screencast](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/src/img/screencast.gif)
 
 ## Configuration
 
-![Screenshot](img/screenshot.png)
+![Screenshot](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/src/img/screenshot.png)
 
 ### Basic Auth
 
@@ -34,7 +34,7 @@ It provides a simple Grafana 9.x panel that shows only one button - to integrate
 
 Due to the Grafana API & security restrictions in modern browsers the following must be considered before using Basic Auth:
 
-![Basic Auth Configuration](img/authentication.png)
+![Basic Auth Configuration](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/v1.0.24/src/img/authentication.png)
 
 - Neither username nor password are stored encryted in Grafana.
   The password is there to everyone with access to the dashboard in Grafana!
