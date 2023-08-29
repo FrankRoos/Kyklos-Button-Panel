@@ -1,21 +1,33 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
-  "name": "Button Kyklos Panel",
+  "name": "Kyklos Button Panel",
   "id": "frankroos-buttonkyklos-panel",
   "info": {
     "keywords": [
-      "panel"
+      "panel",
+      "rest",
+      "button",
+      "integration"
     ],
-    "description": "Send post request",
+    "description": "Panel for a single button to send requests",
     "author": {
-      "name": "Frankroos"
+      "name": "GFT Technologies"
     },
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [],
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/FrankRoos/Kyklos-Button-Panel"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/LICENSE"
+      }
+    ],
     "screenshots": [],
     "version": "%VERSION%",
     "updated": "%TODAY%"
