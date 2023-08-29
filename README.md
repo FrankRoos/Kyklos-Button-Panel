@@ -1,3 +1,21 @@
+# Kyklos Button Panel
+
+It provides a simple Grafana 9.x panel that shows only one button - to integrate with any kind of HTTP/REST API:
+
+- Support `GET` and `POST` HTTP verb
+  - Adds no new javascript dependencies
+  - Uses standard browser APIs and respects CORS
+  - Optional text payload for `POST` requests via syntax-highlighiting editor
+- Support for custom header parameter or query parameter
+- Variable support via `$variableName` in
+  - URL
+  - Header/Query parameter name & value
+  - POST body payload
+  - Button label
+- Support for HTTP Basic Auth
+- Custom label text & Grafana template design
+  - Customize icon & button colors
+
 # Grafana panel plugin template
 
 This template is a starting point for building a panel plugin for Grafana.
@@ -8,9 +26,7 @@ Panel plugins allow you to add new types of visualizations to your dashboard, su
 
 Use panel plugins when you want to do things like visualize data returned by data source queries, navigate between dashboards, or control external systems (such as smart home devices).
 
-## Getting started
-
-### Frontend
+## Getting started (Install)
 
 1. Install dependencies
 
@@ -46,7 +62,7 @@ Use panel plugins when you want to do things like visualize data returned by dat
    npm run server
    ```
 
-6. Run the E2E tests (using Cypress)
+6. Run the E2E tests (using Cypress) : not mandatory
 
    ```bash
    # Spins up a Grafana instance first that we tests against
@@ -56,7 +72,7 @@ Use panel plugins when you want to do things like visualize data returned by dat
    npm run e2e
    ```
 
-7. Run the linter
+7. Run the linter : not mandatory
 
    ```bash
    npm run lint
@@ -65,7 +81,6 @@ Use panel plugins when you want to do things like visualize data returned by dat
 
    npm run lint:fix
    ```
-
 
 # Distributing your plugin
 
@@ -106,7 +121,6 @@ To trigger the workflow we need to push a version tag to github. This can be ach
 1. Run `npm version <major|minor|patch>`
 2. Run `git push origin main --follow-tags`
 
-
 ## Learn more
 
 Below you can find source code for existing app plugins and other related documentation.
@@ -114,3 +128,7 @@ Below you can find source code for existing app plugins and other related docume
 - [Basic panel plugin example](https://github.com/grafana/grafana-plugin-examples/tree/master/examples/panel-basic#readme)
 - [Plugin.json documentation](https://grafana.com/docs/grafana/latest/developers/plugins/metadata/)
 - [How to sign a plugin?](https://grafana.com/docs/grafana/latest/developers/plugins/sign-a-plugin/)
+
+## License
+
+MIT
