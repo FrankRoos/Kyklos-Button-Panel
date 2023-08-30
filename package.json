@@ -1,5 +1,5 @@
 {
-  "author": "Frankroos",
+  "author": "GFT Technologies",
   "dependencies": {
     "@emotion/css": "^11.11.2",
     "@grafana/data": "9.5.3",
@@ -9,7 +9,7 @@
     "react-dom": "17.0.2",
     "tslib": "2.5.3"
   },
-  "description": "Send post request",
+  "description": "Panel for a single button to send requests",
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@grafana/e2e": "9.5.3",
