@@ -16,6 +16,34 @@ It provides a simple Grafana 9.x panel that shows only one button - to integrate
 - Custom label text & Grafana template design
   - Customize icon & button colors
 
+## Usage
+
+![Screencast](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/src/img/screencast.gif)
+
+## Configuration
+
+![Screenshot](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/src/img/screenshot.png)
+
+### Basic Auth
+
+⚠️ Please note: ⚠️
+
+Due to the Grafana API & security restrictions in modern browsers the following must be considered before using Basic Auth:
+
+![Basic Auth Configuration](https://github.com/FrankRoos/Kyklos-Button-Panel/blob/v1.0.24/src/img/authentication.png)
+
+- Neither username nor password are stored encryted in Grafana.
+  The password is there to everyone with access to the dashboard in Grafana!
+- The _server_ at the URL _must_ provide proper resposne to the [CORS pre-flight request](https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request). That is:
+  - Provide a proper response to the `OPTIONS` request performed by the browser before the actual `GET`/`POST` requiest is issued
+  - Provide a [`Access-Control-Allow-Credentials: true`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials) header
+  - Provide a proper [`Access-Control-Allow-Origin`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin) header.
+    _No wildcards_ are allowed if credentials are used!
+
+These limitations are inherent and canot be fixed or addressed by the plugin!
+
+Use Basic Auth only if these limitations are acceptable!
+
 # Grafana panel plugin template
 
 This template is a starting point for building a panel plugin for Grafana.
