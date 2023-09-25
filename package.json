@@ -1,5 +1,5 @@
 {
-  "author": "GFT Technologies",
+  "author": "FrankRoos",
   "dependencies": {
     "@emotion/css": "^11.11.2",
     "@grafana/data": "9.5.3",
@@ -9,7 +9,7 @@
     "react-dom": "17.0.2",
     "tslib": "2.5.3"
   },
-  "description": "Panel for a single button to send requests",
+  "description": "One-button panel for sending a request",
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@grafana/e2e": "9.5.3",
@@ -64,5 +64,5 @@
     "test:ci": "jest --maxWorkers 4 --coverage",
     "typecheck": "tsc --noEmit"
   },
-  "version": "1.0.24"
+  "version": "1.0.0"
 }

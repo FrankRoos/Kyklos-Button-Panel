@@ -10,9 +10,9 @@
       "button",
       "integration"
     ],
-    "description": "Panel for a single button to send requests",
+    "description": "One-button panel for sending requests",
     "author": {
-      "name": "GFT Technologies"
+      "name": "FrankRoos"
     },
     "logos": {
       "small": "img/logo.svg",
