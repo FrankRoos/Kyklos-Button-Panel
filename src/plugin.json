@@ -28,7 +28,16 @@
         "url": "https://github.com/FrankRoos/Kyklos-Button-Panel/blob/main/LICENSE"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "path": "img/screenshot.png",
+        "name": "Settings"
+      },
+      {
+        "path": "img/authentication.png",
+        "name": "SettingsAuth"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
