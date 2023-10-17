@@ -65,5 +65,5 @@
     "test:ci": "jest --maxWorkers 4 --coverage",
     "typecheck": "tsc --noEmit"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
